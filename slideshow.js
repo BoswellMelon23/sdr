@@ -7,6 +7,10 @@ const images = [
 let current = 0;
 const slide = document.getElementById('slide');
 
+// Set fixed dimensions for the slideshow image
+slide.style.width = '1100px';
+slide.style.height = '860px';
+
 function showNext() {
     current = (current + 1) % images.length;
     slide.src = images[current];
