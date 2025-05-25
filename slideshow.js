@@ -18,11 +18,13 @@
             position: relative;
         }
         nav {
-            position: absolute;
+            position: fixed;
             top: 40px;
             right: -300px;
             white-space: nowrap;
             animation: slide-in 1.5s forwards ease-out;
+            background-color: white;
+            padding: 10px;
         }
         @keyframes slide-in {
             to {
@@ -43,7 +45,7 @@
         }
         #slideshow img {
             width: 1100px;
-            height: 430px;
+            height: 860px;
         }
         .bottom-section {
             display: flex;
@@ -66,12 +68,13 @@
 <body>
     <header>
         <h1 style="font-size: 3em; margin: 0;">Spaghetti Dinner<br>Records</h1>
-        <nav>
-            <a href="#" style="margin-right: 20px;">ARTISTS</a>
-            <a href="#" style="margin-right: 20px;">VIDEO</a>
-            <a href="#">MUSIC VIDEO</a>
-        </nav>
     </header>
+
+    <nav>
+        <a href="#" style="margin-right: 20px;">ARTISTS</a>
+        <a href="#" style="margin-right: 20px;">VIDEO</a>
+        <a href="#">MUSIC VIDEO</a>
+    </nav>
 
     <main>
         <div class="container">
