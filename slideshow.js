@@ -13,3 +13,12 @@ function showNext() {
 }
 
 setInterval(showNext, 3000); // Change image every 3 seconds
+
+// Fade in website on load
+window.addEventListener('load', () => {
+    document.body.style.opacity = '0';
+    document.body.style.transition = 'opacity 1.5s ease-in-out';
+    requestAnimationFrame(() => {
+        document.body.style.opacity = '1';
+    });
+});
